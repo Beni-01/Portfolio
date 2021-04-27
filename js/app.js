@@ -59,7 +59,7 @@ let AddProgressBarItem = (icon, degree, parent) => {
     .then(funct);
 };*/
 
-let linkApi = "http://localhost:3000/";
+let linkApi = "https://my-json-server.typicode.com/Beni-01/portfolioDB/";
 fetch(linkApi + "counter")
   .then((response) => response.json())
   .then((data) => {
