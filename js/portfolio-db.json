@@ -1,0 +1,79 @@
+{
+
+	"counter": [2, 9, 163, 12],
+	"competences": [{
+			"id": 1,
+			"icon": "html5",
+			"degree": 90
+		},
+		{
+			"id": 2,
+			"icon": "css3-alt",
+			"degree": 70
+		},
+		{
+			"id": 3,
+			"icon": "mdb",
+			"degree": 90
+		},
+		{
+			"id": 4,
+			"icon": "sass",
+			"degree": 60
+		},
+
+		{
+			"id": 5,
+			"icon": "js",
+			"degree": 70
+		},
+		{
+			"id": 6,
+			"icon": "php",
+			"degree": 75
+		},
+		{
+			"id": 7,
+			"icon": "wordpress",
+			"degree": 80
+		},
+		{
+			"id": 8,
+			"icon": "database",
+			"degree": 80
+		},
+		{
+			"id": 9,
+			"icon": "python",
+			"degree": 60
+		}
+	],
+
+	"realisations": [{
+			"id": 1,
+			"image": "img/realisations/Awamagazine.jpg",
+			"titre": "AWA Magazine",
+			"description": "",
+			"like": 500,
+			"link": "https://awamagazine.info"
+		},
+		{
+			"id": 1,
+			"image": "img/realisations/eliteMag.jpg",
+			"titre": "AWA Magazine",
+			"description": "",
+			"like": 500,
+			"link": "https://elitemag.net"
+		},
+		{
+			"id": 1,
+			"image": "img/realisations/ReprroductionSiteKd.jpg",
+			"titre": "Site KD",
+			"description": "",
+			"like": 500,
+			"link": "https://awamagazine.info"
+		}
+	]
+
+
+}

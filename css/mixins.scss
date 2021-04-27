@@ -1,0 +1,50 @@
+@mixin btn-style-default {
+    background-color:$color-btn-default;
+    color:white;
+    padding:2% !important;
+    font-size: 18px;
+    width: 170px;
+    border: 2px $color-btn-default solid;
+    transition: padding, width, color, 0.9s;
+    border-radius: 60px;
+    font-family: $montserrat-bold-font;
+
+    &:hover{
+        color:$blue-sky;
+        transform:scale(1.1);
+        border: 2px $blue-sky solid;
+        background-color: transparent;   
+    }
+
+    &:active{
+        color:$blue-sky;
+        transform:scale(.6);
+        border: 2px $blue-sky solid;
+        background-color: transparent;   
+    }
+
+
+}
+
+@mixin title-style-default{
+    color:$color-title-default;
+    font-family: $montserrat-bold-font;
+}
+
+@mixin horizontal-row{
+ 
+    margin:auto;
+    &--style{
+             background-color: $color-title-default !important;
+             padding: 0.2%;
+
+        }
+}
+
+@mixin text-style{
+    margin:3% 0px;
+    &--style{
+        line-height:2.5rem;
+        font-size: 19px;
+    }
+}
