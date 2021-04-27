@@ -53,12 +53,6 @@ let AddProgressBarItem = (icon, degree, parent) => {
   parent.appendChild(row);
 };
 
-/*let AjaxRequest = (link, uri, funct) => {
-  fetch(link + uri)
-    .then((response) => response.json())
-    .then(funct);
-};*/
-
 let linkApi = "https://my-json-server.typicode.com/Beni-01/portfolioDB/";
 fetch(linkApi + "counter")
   .then((response) => response.json())
@@ -81,56 +75,3 @@ fetch(linkApi + "competences")
       AddProgressBarItem(value.icon, value.degree, card1);
     });
   });
-
-let divElement3 = document.createElement("div"),
-  img = document.createElement("img"),
-  h2 = document.createElement("h2"),
-  p = document.createElement("p"),
-  divIcons = document.createElement("div"),
-  divIconItem = document.createElement("div"),
-  divUnstyled1 = document.createElement("div"),
-  divUnstyled2 = document.createElement("div"),
-  ReactIcon = document.createElement("i"),
-  ReactIcon2 = document.createElement("i");
-
-/*
-  <div class="col-sm-3 card card--set-position" >
-  <img src="img/realisations/eliteMag.jpg" class="card__image" alt="">
-  <h2 class=" card__title--style">EliteMag</h2>
-
-  <p  class="card__body--text">
-    ELITEMAG.NET est un média d’ELITE PRESSE. 
-    Il traite les informations de tous domaines 
-    de la vie sans aucune couleur, en observant 
-    rigoureusement...
-  </p>
-  
-  <div class='card__icons card__icons--style'>
-    <div class='card-icons-item'>
-      
-      <div><i class='fa fa-heart fa-2x fa--text-red'></i> <span>500</span></div>
-      <div><i class="fa fa-link fa-2x fa--text-blue"></i></div>
-     </div>
-  </div>
-
-</div>*/
-
-divElement3.classList.add("col-sm-3", "card", "card--set-position");
-img.classList.add("card__image");
-//img.setAttribute("alt", "");
-h2.classList.add("card__title--style");
-p.classList.add("card__body--text");
-divIconItem.classList.add("card-icons-item");
-divIcons.classList.add("card__icons", "card__icons--style");
-ReactIcon.classList("fa fa-heart", "fa-2x", "fa--text-red");
-ReactIcon2.classList("fa fa-link", "fa-2x", "fa--text-blue");
-
-divUnstyled1.appendChild(ReactIcon);
-divUnstyled2.appendChild(ReactIcon2);
-divIconItem.appendChild(divUnstyled1);
-divIconItem.appendChild(divUnstyled2);
-divIcon.appendChild(divIconItem);
-divElement3.appendChild(img);
-divElement3.appendChild(h2);
-divElement3.appendChild(p);
-divElement3.appendChild(divIcon);
